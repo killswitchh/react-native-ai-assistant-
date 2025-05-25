@@ -10,9 +10,9 @@ export const callEmailVerifyFunction = async (email: string, handleSubmit: ((arg
           Authorization: `Bearer ${process.env.EXPO_PUBLIC_RESEND_API_KEY}`,
         },
         body: JSON.stringify({
-          from: "YourAppName <onboarding@appname.co.uk>",
+          from: "AI Assistant <devlinkadmin@devlink.pro>",
           to: [email],
-          subject: "Add You App Name Email Verification",
+          subject: "AI Assistant Email Verification",
           html: `<p>Enter the code into the verification screen and your email will be validated</strong><strong> <br/>${randomCode}</strong>`,
         }),
       });

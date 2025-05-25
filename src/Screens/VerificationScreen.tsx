@@ -29,11 +29,10 @@ const VerificationScreen = ({ route, navigation }) => {
       const userId = signInData.user.id;
 
       const { error: profileError } = await supabase
-        .from('user_profile')
+        .from('users')
         .insert({
           user_uuid: userId,
           user_email: email,
-          created_at: new Date().toISOString()
         });
       if (profileError) {
         throw profileError;

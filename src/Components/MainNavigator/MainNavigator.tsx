@@ -45,19 +45,22 @@ const MainNavigator = () => {
         initialRouteName="SplashScreen"
       >
         {session ? (
+          // Screens available only when logged in
           <>
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
-            <Stack.Screen name="VerificationScreen" component={VerificationScreen} />
             <Stack.Screen name="ButtonExamples" component={ButtonExamples} />
             <Stack.Screen name="ChangePasswordScreen" component={ChangePasswordScreen} />
           </>
         ) : (
+          // Screens available only when logged out
           <>
             <Stack.Screen name="SplashScreen" component={SplashScreen} />
             <Stack.Screen name="SignInScreen" component={SignInScreen} />
             <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
           </>
         )}
+        {/* Screens available regardless of auth state */}
+        <Stack.Screen name="VerificationScreen" component={VerificationScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
