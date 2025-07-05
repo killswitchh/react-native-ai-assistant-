@@ -7,7 +7,7 @@ import SignInScreen from "@screens/SignInScreen";
 import HomeScreen from "@screens/HomeScreen";
 import VerificationScreen from "@screens/VerificationScreen";
 import ChangePasswordScreen from "@screens/ChangePasswordScreen";
-import ButtonExamples from "@screens/ButtonExamples";
+import ChatScreen from "@screens/ChatScreen";
 import supabase from "@config/supabase";
 import { Session } from "@supabase/supabase-js";
 
@@ -48,7 +48,7 @@ const MainNavigator = () => {
           // Screens available only when logged in
           <>
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
-            <Stack.Screen name="ButtonExamples" component={ButtonExamples} />
+            <Stack.Screen name="ChatScreen" component={ChatScreen} />
             <Stack.Screen name="ChangePasswordScreen" component={ChangePasswordScreen} />
           </>
         ) : (

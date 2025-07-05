@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "Chat with Gemini",
+    "messages": [
+      {
+        "id": "1",
+        "text": "Hello! How can I help you today?",
+        "sender": "assistant",
+        "timestamp": "2025-07-05T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "React Native Help",
+    "messages": []
+  },
+  {
+    "id": "3",
+    "name": "Supabase Questions",
+    "messages": []
+  }
+]
